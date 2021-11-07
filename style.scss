@@ -61,10 +61,13 @@ nav {
             transition: 0.5s;
             list-style: none;
             margin-right: 40px;
-            // background-color: white;
-            // padding-left: 1em;
-            // padding-right: 1em;
-            // border-radius: 10px;
+
+            a{
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: 900;
+                color: var(--red);
+            }
         }
     }
 

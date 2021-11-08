@@ -1,0 +1,190 @@
+//IMPORTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,900&display=swap');
+
+@font-face {
+    font-family: "Convalescence";
+    src: url("./assets/convalescence.eot?") format("eot"), url("./assets/convalescence.woff") format("woff"), url("./assets/convalescence.ttf") format("truetype"), url("./assets/convalescence.svg#Convalescence") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Burton's Nightmare 2000";
+    src: url("./assets/Burton_s_nigthmare2000.eot?") format("eot"), url("./assets/Burton_s_nigthmare2000.woff") format("woff"), url("./assets/Burton_s_nigthmare2000.ttf") format("truetype"), url("./assets/Burton_s_nigthmare2000.svg#Burton'sNightmare2000") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TRON";
+    src: url("./assets/TRON.eot") format("eot"), url("./assets/TRON.woff") format("woff"), url("./assets/TRON.ttf") format("truetype"), url("./assets/TRON.svg#TRON") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+//root
+:root {
+    --red: #df105c;
+}
+
+//RESETS
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p,li,a,h1,h2,h3,h4,h4,h5,h6{
+    font-size: 1.3em;
+}
+a:hover {
+    cursor: pointer;
+}
+
+//NAV
+nav {
+    z-index: 500;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(6.5px);
+    min-height: 70px;
+    font-size: 1.2em;
+    color: var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        font-weight: 900;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            transition: 0.5s;
+            list-style: none;
+            margin-right: 40px;
+
+            a{
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: 900;
+                color: var(--red);
+            }
+        }
+    }
+
+    header {
+        margin-left: 2%;
+        display: flex;
+        align-content: center;
+        a{
+            transition: 0.5s;
+        }
+    }
+
+    li:hover {
+        transform: scale(1.3,1.3);
+        cursor: pointer;
+    }
+
+    a.name,
+    a.name:visited {
+        font-family: "TRON";
+        color: var(--red);
+        text-decoration: none;
+        font-size: 1.3em;
+
+    }
+
+    a.name:hover {
+        transform: scale(1.2,1.2);
+        cursor: pointer;
+    }
+
+}
+.cover{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/bandasCover.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    h1{
+        font-family: "TRON";
+        color: var(--red);
+        font-size: 5em;
+    }
+    p{
+        margin-top: 10vh;
+        font-size: 2em;
+        color: var(--red);
+        font-weight: 900;
+    }
+}
+.artists{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 2em;
+        color: var(--red);
+        span{
+            font-family: "TRON";
+        }
+    }
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        width: 30%;
+        position: relative;
+        img{
+            z-index: 3;
+            transition: 0.2s;
+            width: 100%;
+            height: auto;
+            border-radius: 100%;
+        }
+        img:hover{
+            border-radius: 0%;
+        }
+        h3{
+            position: absolute;
+            color: var(--red);
+            display: none;  
+        }
+        .white{
+            z-index: 0;
+            transition: 0.2s;
+            position: absolute;
+            width: 101%;
+            height: 101%;
+            border-radius: 100%;
+        }
+    }
+    article:hover{
+        .white{
+            z-index: 50;
+            display: block;
+            background-color: var(--red);
+            border-radius: 0%;
+        }
+        h3{
+            z-index: 70;
+            display: block;
+            color:white;
+        }
+        
+    }
+}

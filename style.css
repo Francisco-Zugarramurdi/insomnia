@@ -30,7 +30,16 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-p, li, a, h1, h2, h3, h4, h4, h5, h6 {
+p,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
   font-size: 1.3em;
 }
 
@@ -228,6 +237,7 @@ main .about figure .vl {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .numbers .number {
@@ -245,10 +255,14 @@ main .about figure .vl {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 10%;
-  height: 20vh;
+}
+
+.numbers .number .circle {
+  height: 25vh;
+  width: 25vh;
   border-radius: 50%;
   border: 2px solid var(--red);
+  position: absolute;
 }
 
 .numbers .number h2 {
@@ -276,7 +290,6 @@ main .about figure .vl {
   margin-top: 4%;
   padding-bottom: 2%;
   margin-bottom: 2%;
-  border-bottom: 2px solid var(--red);
 }
 
 .wait h2:first-of-type {
@@ -319,5 +332,158 @@ main .about figure .vl {
           align-items: center;
   text-align: center;
   width: 30%;
+}
+
+footer {
+  font-size: 0.8em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.first {
+  padding: 1%;
+  border-top: 2px solid var(--red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.first ul li {
+  width: 7%;
+  margin: 0;
+  padding: 0;
+}
+
+.first ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1%;
+}
+
+.me > p:first-of-type {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.me > p:first-of-type span {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  color: var(--red);
+}
+
+.me > p:first-of-type img {
+  width: 50px;
+  height: auto;
+  margin-left: 1%;
+}
+
+.me .github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.me .github a {
+  margin-left: 1%;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.me .github a img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.me .github a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: var(--red);
+}
+
+.me .thanks {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.me .thanks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  display: flex;
+  list-style: none;
+}
+
+.me .thanks ul li {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

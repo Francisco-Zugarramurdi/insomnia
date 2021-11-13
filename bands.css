@@ -203,8 +203,8 @@ nav a.name:hover {
 
 .gallery article img {
   z-index: 3;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   width: 100%;
   height: auto;
   border-radius: 100%;
@@ -222,8 +222,8 @@ nav a.name:hover {
 
 .gallery article .white {
   z-index: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: absolute;
   width: 101%;
   height: 101%;

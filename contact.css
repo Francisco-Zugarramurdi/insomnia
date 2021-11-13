@@ -1,0 +1,148 @@
+.formContainer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContainer form {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--red);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  -webkit-filter: drop-shadow(0 10px 15px #df105c56);
+          filter: drop-shadow(0 10px 15px #df105c56);
+}
+
+.formContainer form h2 {
+  margin-top: 0;
+  font-family: "TRON";
+  font-size: 1.8em;
+  color: white;
+  margin-bottom: 6%;
+}
+
+.formContainer form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-right: 1%;
+  color: white;
+  font-size: 1.3em;
+}
+
+.formContainer form label input {
+  font-size: 1em;
+  height: 2.5vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 4%;
+}
+
+.formContainer form label input:focus {
+  background-color: #b60043;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  outline: none;
+  color: white;
+}
+
+.formContainer form label textarea {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 80%;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.formContainer form label textarea:focus {
+  outline: none;
+  width: 92%;
+  background-color: #b60043;
+  color: white;
+}
+
+.formContainer form label select {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.formContainer form button {
+  margin-top: 10%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  background-color: white;
+  border: none;
+  color: var(--red);
+  font-size: 1.5em;
+}
+
+.formContainer form button:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+  background-color: var(--red);
+  color: white;
+}
+
+.formContainer form p {
+  margin-top: 3%;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.formContainer form p a, .formContainer form p a:visited {
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.3em;
+  text-decoration: underline;
+  color: white;
+  font-weight: 900;
+}
+
+.formContainer form p a:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+/*# sourceMappingURL=contact.css.map */

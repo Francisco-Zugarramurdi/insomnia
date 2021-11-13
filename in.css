@@ -155,7 +155,6 @@ nav a.name:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
   background-color: var(--red);
   border-radius: 15px;
   display: flex;
@@ -195,7 +194,7 @@ nav a.name:hover {
   height: 2.5vh;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 60%;
+  width: 80%;
   border-radius: 10px;
   border: none;
   -webkit-box-sizing: border-box;
@@ -204,7 +203,7 @@ nav a.name:hover {
 }
 
 .formContainer form label input:focus {
-  background-color: #ff015e;
+  background-color: #b60043;
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   outline: none;

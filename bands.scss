@@ -33,9 +33,20 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-p,li,a,h1,h2,h3,h4,h4,h5,h6{
+
+p,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
     font-size: 1.3em;
 }
+
 a:hover {
     cursor: pointer;
 }
@@ -53,6 +64,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     ul {
         font-weight: 900;
         display: flex;
@@ -63,7 +75,7 @@ nav {
             list-style: none;
             margin-right: 40px;
 
-            a{
+            a {
                 text-decoration: none;
                 font-size: 1.2em;
                 font-weight: 900;
@@ -76,13 +88,14 @@ nav {
         margin-left: 2%;
         display: flex;
         align-content: center;
-        a{
+
+        a {
             transition: 0.5s;
         }
     }
 
     li:hover {
-        transform: scale(1.3,1.3);
+        transform: scale(1.3, 1.3);
         cursor: pointer;
     }
 
@@ -96,12 +109,13 @@ nav {
     }
 
     a.name:hover {
-        transform: scale(1.2,1.2);
+        transform: scale(1.2, 1.2);
         cursor: pointer;
     }
 
 }
-.cover{
+
+.cover {
     width: 100%;
     height: 50vh;
     display: flex;
@@ -109,62 +123,72 @@ nav {
     align-items: center;
     background-image: url(./assets/bandasCover.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
-    
-    h1{
+    background-size: cover;
+
+    h1 {
         font-family: "TRON";
         color: var(--red);
         font-size: 5em;
     }
-    p{
+
+    p {
         margin-top: 10vh;
         font-size: 2em;
         color: var(--red);
         font-weight: 900;
     }
 }
-.artists{
+
+.artists {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2{
+
+    h2 {
         font-size: 2em;
         color: var(--red);
-        span{
+
+        span {
             font-family: "TRON";
         }
     }
 }
-.gallery{
+
+.gallery {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    article{
+
+    article {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 1%;
         width: 30%;
         position: relative;
-        img{
+
+        img {
             z-index: 3;
             transition: 0.4s;
             width: 100%;
             height: auto;
             border-radius: 100%;
         }
-        img:hover{
+
+        img:hover {
             border-radius: 0%;
         }
-        h3{
+
+        h3 {
             position: absolute;
             color: var(--red);
-            display: none;  
+            display: none;
         }
-        .white{
+
+        .white {
             z-index: 0;
             transition: 0.4s;
             position: absolute;
@@ -173,46 +197,117 @@ nav {
             border-radius: 100%;
         }
     }
-    article:hover{
-        .white{
+
+    article:hover {
+        .white {
             z-index: 50;
             display: block;
             background-color: var(--red);
             border-radius: 0%;
         }
-        h3{
+
+        h3 {
             z-index: 70;
             display: block;
-            color:white;
+            color: white;
         }
-        
+
     }
 }
 
 //Media Queries
 @media (max-width: 1440px) {
-    
-    nav{
-        header{
-            a.name{
+
+    nav {
+        header {
+            a.name {
                 font-size: 2em;
             }
         }
-        ul{
-            li{
-                a{
+
+        ul {
+            li {
+                a {
                     font-size: 1.5em;
                 }
             }
         }
     }
-    .cover p{
+
+    .cover p {
         font-size: 2em;
     }
-    .artists{
-        h2{
+
+    .artists {
+        h2 {
             font-size: 2.5em;
         }
+    }
+
+}
+
+//Burger Settings
+.burgerLabel2 {
+    display: none;
+}
+
+.burgerLabel {
+    display: none;
+}
+
+#burger {
+    display: none;
+}
+
+//END Burger Settings
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .burgerLabel {
+        display: inline-block;
+        margin-right: 100px;
+        background-image: url(./assets/bars.svg);
+        background-repeat: no-repeat;
+        filter: invert(18%) sepia(51%) saturate(7496%) hue-rotate(329deg) brightness(88%) contrast(98%);
+        width: 75px;
+        height: 75px;
+    }
+
+    .burgerLabel2 {
+        color: white;
+        display: inline-block;
+    }
+
+    nav ul {
+        transition: 0.3s;
+        display: none;
+    }
+
+    #burger:checked~ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--red);
+        z-index: 100;
+
+        li a {
+            color: white;
+            margin-left: 1%;
+        }
+
     }
 
 }

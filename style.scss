@@ -528,4 +528,61 @@ footer {
         }
 
     }
+
+    main .about figure{
+        display: flex;
+        flex-direction: column;
+        .vl{
+            display: none;
+        }
+        figcaption{
+            width: 60%;
+            max-width: 100%;
+            height: fit-content;
+        }
+    }
+
+    main .wait{
+        width: 100%;
+        margin-top: 100px;
+    }
+    main .wait article{
+        width: 100%;
+        flex-direction: column-reverse;
+        .desc{
+            width: 100%;
+            p{
+                width: 70%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    main .wait article:first-of-type{
+        flex-direction: column;
+        
+    }
+    main .wait article:last-of-type{
+        flex-direction: column;
+    }
+
+    footer{
+        
+        .me{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            >p:first-of-type{
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+            }
+            .github{
+                width: 80%;
+            }
+            .thanks{
+                width: 80%;
+            }
+        }
+    }
 }

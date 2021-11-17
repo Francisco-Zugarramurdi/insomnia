@@ -238,7 +238,8 @@ nav a.name:hover {
   text-align: center;
 }
 
-.formContainer form p a, .formContainer form p a:visited {
+.formContainer form p a,
+.formContainer form p a:visited {
   display: inline-block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -251,5 +252,32 @@ nav a.name:hover {
 .formContainer form p a:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+}
+
+@media (max-width: 1440px) {
+  p,
+  li,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.6em;
+  }
+  nav header a.name {
+    font-size: 2em;
+  }
+  nav ul li a {
+    font-size: 1.5em;
+  }
+  body .formContainer form h2 {
+    font-size: 2.3em;
+  }
+  body .formContainer form label {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=in.css.map */

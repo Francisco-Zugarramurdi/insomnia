@@ -118,3 +118,49 @@
 
     }
 }
+
+@media (max-width: 1440px) {
+
+    p,
+    li,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.6em;
+    }
+
+    nav {
+        header {
+            a.name {
+                font-size: 2em;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .formContainer{
+        form{
+            h2{
+                font-size: 2.3em;
+            }
+            label{
+                font-size: 1.5em;
+            }
+            select{
+                height: 3vh;
+            }
+        }
+    }
+
+}

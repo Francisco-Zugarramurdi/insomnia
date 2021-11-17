@@ -117,7 +117,6 @@ nav a.name:visited {
   font-family: "TRON";
   color: var(--red);
   text-decoration: none;
-  font-size: 1.3em;
 }
 
 nav a.name:hover {
@@ -223,6 +222,7 @@ main .about figure .vl {
 }
 
 .numbers {
+  z-index: 10;
   width: 90%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -481,9 +481,107 @@ footer {
   margin-right: 1%;
 }
 
+@media (max-width: 1440px) {
+  p,
+  li,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.6em;
+  }
+  nav header a.name {
+    font-size: 2em;
+  }
+  nav ul li a {
+    font-size: 1.5em;
+  }
+  main .about figure figcaption {
+    font-size: 1.3em;
+  }
+  main .about figure .vl {
+    width: 3px;
+  }
+  main .numbers {
+    width: 90%;
+    padding: 2%;
+  }
+  main .numbers .number {
+    font-size: 1.3em;
+  }
+  footer .first ul li {
+    width: 10%;
+  }
+  footer .me p {
+    font-size: 1.5em;
+  }
+  footer .me .github a {
+    width: 12%;
+  }
+}
+
+.burgerLabel2 {
+  display: none;
+}
+
+.burgerLabel {
+  display: none;
+}
+
+#burger {
+  display: none;
+}
+
 @media (max-width: 1024px) {
-  nav {
+  .burgerLabel {
+    display: inline-block;
+    margin-right: 100px;
+    background-image: url(./assets/bars.svg);
+    background-repeat: no-repeat;
+    -webkit-filter: invert(18%) sepia(51%) saturate(7496%) hue-rotate(329deg) brightness(88%) contrast(98%);
+            filter: invert(18%) sepia(51%) saturate(7496%) hue-rotate(329deg) brightness(88%) contrast(98%);
+    width: 75px;
+    height: 75px;
+  }
+  .burgerLabel2 {
+    color: white;
+    display: inline-block;
+  }
+  nav ul {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     display: none;
+  }
+  #burger:checked ~ ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--red);
+    z-index: 100;
+  }
+  #burger:checked ~ ul li a {
+    color: white;
+    margin-left: 1%;
   }
 }
 /*# sourceMappingURL=style.css.map */

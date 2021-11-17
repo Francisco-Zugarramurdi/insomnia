@@ -77,8 +77,8 @@ nav {
             // padding-right: 1em;
             // border-radius: 10px;
         }
-        
-        a{
+
+        a {
             text-decoration: none;
             font-size: 1.2em;
             font-weight: 900;
@@ -200,7 +200,8 @@ nav {
             font-size: 1.3em;
             text-align: center;
 
-            a,a:visited {
+            a,
+            a:visited {
                 display: inline-block;
                 transition: 0.5s;
                 font-size: 1.3em;
@@ -208,12 +209,62 @@ nav {
                 color: white;
                 font-weight: 900;
 
-                
+
             }
-            a:hover{
-                transform: scale(1.2,1.2);
+
+            a:hover {
+                transform: scale(1.2, 1.2);
             }
         }
 
     }
+}
+
+@media (max-width: 1440px) {
+
+    p,
+    li,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.6em;
+    }
+
+    nav {
+        header {
+            a.name {
+                font-size: 2em;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    body {
+
+        .formContainer {
+            form {
+                h2 {
+                    font-size: 2.3em;
+                }
+
+                label {
+                    font-size: 1.5em;
+                }
+
+            }
+        }
+    }
+
 }

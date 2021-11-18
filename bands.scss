@@ -310,3 +310,61 @@ nav {
     }
 
 }
+
+@media (max-width: 768px) {
+    .cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 3em;
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+
+
+
+    nav {
+        header a.name {
+            font-size: 1.3em;
+        }
+
+        .burgerLabel {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .cover {
+        width: 100vw;
+
+        h1 {
+            font-size: 2.3em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    main.artists {
+        width: 100vw;
+        h2 {
+            span {
+                font-size: 1em;
+            }
+        }
+    }
+
+}

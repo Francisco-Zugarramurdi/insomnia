@@ -326,4 +326,55 @@ nav a.name:hover {
     margin-left: 1%;
   }
 }
+
+@media (max-width: 768px) {
+  .cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cover h1 {
+    font-size: 3em;
+    margin-top: 0;
+  }
+  .cover p {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  nav header a.name {
+    font-size: 1.3em;
+  }
+  nav .burgerLabel {
+    width: 50px;
+    height: 50px;
+  }
+  .cover {
+    width: 100vw;
+  }
+  .cover h1 {
+    font-size: 2.3em;
+  }
+  .cover p {
+    font-size: 1em;
+  }
+  main.artists {
+    width: 100vw;
+  }
+  main.artists h2 span {
+    font-size: 1em;
+  }
+}
 /*# sourceMappingURL=bands.css.map */

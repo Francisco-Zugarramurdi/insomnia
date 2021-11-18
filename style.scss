@@ -282,6 +282,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .first {
@@ -529,13 +530,27 @@ footer {
 
     }
 
+
     main .cover{
+        
+        background-image: none;
+        background-color:royalblue ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         h1{
+            background-color: sandybrown;
             font-size: 4em;
+            margin-top: 0;
         }
         p{
+            background-color: seagreen;
             font-size: 1.5em;
+            margin-top:0;
         }
+    }
+    main .about .what{
+        font-size: 3em;
     }
 
     main .about figure{
@@ -576,7 +591,9 @@ footer {
     }
 
     footer{
-        
+        .first{
+            width: 100%;
+        }
         .me{
             flex-direction: column;
             align-items: center;

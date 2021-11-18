@@ -583,6 +583,12 @@ footer {
     color: white;
     margin-left: 1%;
   }
+  main .cover h1 {
+    font-size: 4em;
+  }
+  main .cover p {
+    font-size: 1.5em;
+  }
   main .about figure {
     display: -webkit-box;
     display: -ms-flexbox;

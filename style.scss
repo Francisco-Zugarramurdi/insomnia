@@ -529,6 +529,15 @@ footer {
 
     }
 
+    main .cover{
+        h1{
+            font-size: 4em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    }
+
     main .about figure{
         display: flex;
         flex-direction: column;

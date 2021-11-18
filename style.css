@@ -501,7 +501,7 @@ footer {
     font-size: 2em;
   }
   nav ul li a {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   main .about figure figcaption {
     font-size: 1.3em;
@@ -540,9 +540,17 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  main {
+    width: 100vw;
+  }
+  body {
+    width: 90%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
   .burgerLabel {
     display: inline-block;
-    margin-right: 100px;
     background-image: url(./assets/bars.svg);
     background-repeat: no-repeat;
     -webkit-filter: invert(18%) sepia(51%) saturate(7496%) hue-rotate(329deg) brightness(88%) contrast(98%);
@@ -587,8 +595,7 @@ footer {
     margin-left: 1%;
   }
   main .cover {
-    background-image: none;
-    background-color: royalblue;
+    width: 100vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -601,12 +608,10 @@ footer {
             justify-content: center;
   }
   main .cover h1 {
-    background-color: sandybrown;
     font-size: 4em;
     margin-top: 0;
   }
   main .cover p {
-    background-color: seagreen;
     font-size: 1.5em;
     margin-top: 0;
   }
@@ -661,6 +666,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  footer {
+    width: 110%;
+    padding: 0;
+    margin: 0;
   }
   footer .first {
     width: 100%;

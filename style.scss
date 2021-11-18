@@ -565,6 +565,7 @@ footer {
     }
 
     main .about figure{
+        text-align: center;
         display: flex;
         flex-direction: column;
         .vl{
@@ -575,6 +576,9 @@ footer {
             max-width: 100%;
             height: fit-content;
         }
+        img{
+            width: 70%;
+        }
     }
 
     main .wait{
@@ -584,6 +588,7 @@ footer {
     main .wait article{
         width: 100%;
         flex-direction: column-reverse;
+        text-align: center;
         .desc{
             width: 100%;
             p{

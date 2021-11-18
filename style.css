@@ -619,6 +619,7 @@ footer {
     font-size: 3em;
   }
   main .about figure {
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -637,6 +638,9 @@ footer {
     height: -moz-fit-content;
     height: fit-content;
   }
+  main .about figure img {
+    width: 70%;
+  }
   main .wait {
     width: 100%;
     margin-top: 100px;
@@ -647,6 +651,7 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    text-align: center;
   }
   main .wait article .desc {
     width: 100%;
